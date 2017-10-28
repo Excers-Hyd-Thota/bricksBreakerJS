@@ -1,0 +1,92 @@
+* { padding: 10; margin: 10; }
+    	#myCanvas,#mainCanvas,#levelCanvas { background-image: url('../images/sky.jpg'); display: block; margin: 0 auto;background-repeat:repeat;}
+    	#myCanvas1 { display: block; margin: 0 auto; background-repeat: no-repeat;}
+.btn{
+    text-decoration: none;
+    color: blue;
+    width: 150px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: white;
+    text-align: center;
+    letter-spacing: .5px;
+    cursor: pointer;
+    align-items: center;
+    position:absolute;
+     zindex:2;
+     left: 617px; 
+}
+img{
+	   z-index:2;
+	   
+}
+.btn1,.btn4{
+	 top:150px;
+}
+.btn2,.btn5{
+	 top:220px;
+}
+.btn3{
+	 top:290px;
+}
+.btn4{
+	position:absolute;
+	   left: 700px;
+	 top:420px;
+}
+.btn5{
+position:absolute;
+	   left: 630px;
+	 top:420px;
+}
+.btn6{
+position:absolute;
+	 
+	 top:360px;
+} 
+input{
+	z-index: 2;
+	left:617px;
+	position: absolute;
+	top:200px;
+}
+#radio1{
+	z-index: 2;
+	left:617px;
+	position: absolute;
+	top:200px;
+}#radio2{
+	z-index: 2;
+	left:617px;
+	position: absolute;
+	top:250px;
+}#radio3{
+	z-index: 2;
+	left:617px;
+	position: absolute;
+	top:300px;
+}
+label#r1{
+	z-index: 2;
+	left:650px;
+	position: absolute;
+	font-size: 30px;
+	color: white;
+	top:195px;
+}
+label#r2{
+	z-index: 2;
+	left:650px;
+	position: absolute;
+	font-size: 30px;
+	color: white;
+	top:245px;
+}
+label#r3{
+	z-index: 2;
+	left:650px;
+	position: absolute;
+	font-size: 30px;
+	color: white;
+	top:295px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <title>Brick breaker</title>
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<canvas id="mainCanvas" width="500" height="620">
+</canvas>
+<button class='btn btn1' onclick="viewCanvas()">Start</button>
+<button class='btn btn2' onclick="viewCanvas1()">High Scores</button>
+<button class='btn btn3' onclick="viewCanvas2()">Settings</button>
+<button class='btn btn6' onclick="viewCanvas3()">Difficulty Level</button>
+<button class='btn btn6' onclick="saveLevel()" style="display: none;">Save</button>
+<div id='levelMenu' style='display:none;'>
+  <div>
+<input type="radio" name="radio" id="radio1" class="radio" checked/>
+<label id='r1' for="radio1">Easy</label>
+</div>
+</br>
+<div>
+<input type="radio" name="radio" id="radio2" class="radio"/>
+<label id='r2' for="radio2">Medium</label>
+</div>
+</br>
+<div>	
+<input type="radio" name="radio" id="radio3" class="radio"/>
+<label  id='r3' for="radio3">Hard</label>
+</div>
+</div>
+<img class='btn4' id="back" onclick="home()" src="images/home.png" alt="back button" style="display: none;"/>
+<img class='btn5' id='restart' onclick="restartGame()" src="images/restart.png" alt=" replay button" style="display: none;"/>
+<img id="booster" src="images/booster.png" alt="The booster" style="display: none;"/>
+<img id="brick" src="images/brick.png" alt="The brick" style="display: none;"/>
+<img id="mbbrick" src="images/mbrick3.jpg" alt="The brick" style="display: none;"/>
+<img id="mbrick" src="images/mbrick2.png" alt="The brick" style="display: none;"/>
+<canvas id="myCanvas1" width="500" height="40" style="display: none;"></canvas>
+<canvas id="myCanvas" width="500" height="580" style="display: none;"></canvas>
+<canvas id="levelCanvas" width="500" height="620" style="display: none;"></canvas>
+</body>
+   <script src="js/script.js"></script>
+   <script src="js/difficultyScript.js"></script>
+</html>
