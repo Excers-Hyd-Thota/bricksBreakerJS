@@ -1,19 +1,25 @@
 * { padding: 10; margin: 10; }
-    	#myCanvas,#mainCanvas,#levelCanvas { background-image: url('../images/sky.jpg'); display: block; margin: 0 auto;background-repeat:repeat;}
-    	#myCanvas1 { display: block; margin: 0 auto; background-repeat: no-repeat;}
-.btn{
+    	#myCanvas,#myCanvas2,#mainCanvas,#myCanvas3,#levelCanvas,#dispScoreCanvas {background-image: url('../images/b5.jpg'); border-width: 5px;border-color: red; border-style: dashed; display: block; margin: 0 auto;background-repeat:no-repeat;}
+    	#myCanvas1 { background-image: url('../images/b4.jpg');display: block; margin: 0 auto; background-repeat: no-repeat;border-width: 5px;border-color: red; border-right-style: dashed;border-left-style: dashed;border-top-style: dashed; }
+
+body{
+     background-image: url('../images/b4.jpg'); display: block; margin: 0 auto;background-repeat:repeat; 
+}
+
+.btn,.btns{
     text-decoration: none;
-    color: blue;
+    font-size: 20px;
+    color: white;
     width: 150px;
     height: 60px;
     border-radius: 12px;
-    background-color: white;
+    background-color: red;
     text-align: center;
     letter-spacing: .5px;
     cursor: pointer;
     align-items: center;
     position:absolute;
-     zindex:2;
+     z-index:2;
      left: 617px; 
 }
 img{
@@ -36,13 +42,18 @@ img{
 }
 .btn5{
 position:absolute;
-	   left: 630px;
+	   left: 600px;
 	 top:420px;
 }
 .btn6{
 position:absolute;
 	 
 	 top:360px;
+} 
+.btn7{
+position:absolute;
+	 
+	 top:430px;
 } 
 input{
 	z-index: 2;
@@ -89,4 +100,62 @@ label#r3{
 	font-size: 30px;
 	color: white;
 	top:295px;
+}
+table{
+	position:absolute;
+	   left: -171px;
+	 top:-230px;
+	 color: white;
+	 text-align: center;
+	 font-size: 40px;
+	 border: 2px solid red;
+}
+#left
+{
+	top:200px;
+	left:715px;
+}
+#right
+{
+	top:275px;
+	left:715px;
+}
+label#ll1
+{
+	z-index: 2;
+	left:500px;
+	position: absolute;
+	font-size: 35px;
+	color: red;
+	top:200px;
+}
+label#rl1
+{
+	z-index: 2;
+	left:500px;
+	position: absolute;
+	font-size: 35px;
+	color: red;
+	top:270px;
+}
+#submit
+{
+	z-index: 2;
+	left:665px;
+	top:350px;
+	height:30px;
+	width:60px;
+}
+#backb{
+	z-index: 2;
+	position: absolute;
+	top: 574px;
+    width: 71px;
+    height: 30px;
+    left: 457px;
+}
+#title{
+	position: absolute;
+	left:440px;
+	top:74px;
 }

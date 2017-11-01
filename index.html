@@ -4,27 +4,31 @@
    <meta charset="utf-8" />
    <title>Brick breaker</title>
    <link rel="stylesheet" type="text/css" href="css/style.css">
-
 </head>
 <body>
 <canvas id="mainCanvas" width="500" height="620">
 </canvas>
-<button class='btn btn1' onclick="viewCanvas()">Start</button>
-<button class='btn btn2' onclick="viewCanvas1()">High Scores</button>
-<button class='btn btn3' onclick="viewCanvas2()">Settings</button>
-<button class='btn btn6' onclick="viewCanvas3()">Difficulty Level</button>
-<button class='btn btn6' onclick="saveLevel()" style="display: none;">Save</button>
+<input type="text" id="left"  rows="8" cols="2" onclick="viewCanvas2()" style="display: none;" 
+onkeypress="savecontrol_left(event)" value=CL1 />&nbsp;
+<label id='ll1'  style="display: none;" >Left Control</label>
+<input type="text" id="right" rows="8" cols="2" onclick="viewCanvas2()" style="display: none;"
+onkeypress="savecontrol_right(event)" value=CL2 /><br>
+<label id='rl1'  style="display: none";>Right Control</label>
+<input type="button" value="Save" id='submit' class='btns' style="display: none;" onclick="savecontrol()"/>
+<button class='btn btn2' onclick="viewCanvas3()">Play</button>
+<button class='btn btn3' onclick="getScoresList()">High Scores</button>
+<button class='btn btn6' onclick="viewCanvas2()">Settings</button>
+<button class='btn btn7' onclick="viewCanvas4()">Instructions</button>
+<button class='btn btn6' onclick="saveLevel()" style="display: none;">Start Game</button>
 <div id='levelMenu' style='display:none;'>
   <div>
 <input type="radio" name="radio" id="radio1" class="radio" checked/>
 <label id='r1' for="radio1">Easy</label>
 </div>
-</br>
 <div>
 <input type="radio" name="radio" id="radio2" class="radio"/>
 <label id='r2' for="radio2">Medium</label>
 </div>
-</br>
 <div>	
 <input type="radio" name="radio" id="radio3" class="radio"/>
 <label  id='r3' for="radio3">Hard</label>
@@ -33,13 +37,21 @@
 <img class='btn4' id="back" onclick="home()" src="images/home.png" alt="back button" style="display: none;"/>
 <img class='btn5' id='restart' onclick="restartGame()" src="images/restart.png" alt=" replay button" style="display: none;"/>
 <img id="booster" src="images/booster.png" alt="The booster" style="display: none;"/>
+<img id="coin" src="images/coin.png" alt="coin" style="display: none;"/>
 <img id="brick" src="images/brick.png" alt="The brick" style="display: none;"/>
 <img id="mbbrick" src="images/mbrick3.jpg" alt="The brick" style="display: none;"/>
+<img id="title" src="images/title2.png" alt="The title"/>
+<img id="backb" src="images/arrow1.png" onclick="home()" alt="back button" style="display: none;"/>
 <img id="mbrick" src="images/mbrick2.png" alt="The brick" style="display: none;"/>
 <canvas id="myCanvas1" width="500" height="40" style="display: none;"></canvas>
+<canvas id="myCanvas2" width="500" height="620" style="display: none;"></canvas>
+<canvas id="myCanvas3" width="500" height="620" style="display: none;"></canvas>
 <canvas id="myCanvas" width="500" height="580" style="display: none;"></canvas>
 <canvas id="levelCanvas" width="500" height="620" style="display: none;"></canvas>
-</body>
-   <script src="js/script.js"></script>
+<canvas id="dispScoreCanvas" width="500" height="620" style="display: none;"></canvas>
+<div id='scoreList' class='btn4'></div></body>
    <script src="js/difficultyScript.js"></script>
+   <script src="js/displayScore.js"></script>
+   <script src="js/updateScoreList.js"></script>
+   <script src="js/script.js"></script>	
 </html>
